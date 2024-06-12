@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HINATA</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="assets/img/logo-removebg-preview.ico" type="image/x-icon">
+    <!--bootstarp icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Texllate -->
+    <link rel="stylesheet" href="assets/texllate-20240120T154859Z-001/texllate/animate.css">
+
+</head>
+
+<body>
+
+    <div class="preloader">
+        <video id="v1" width="400" height="400" autoplay muted playsinline disablepictureinpicture>
+            <source src="assets/video/robo/loader.mp4" type="video/mp4">
+        </video>
+
+    </div>
+
+    <header class="navbar">
+
+        <div class="logo">
+            <h1>HINATA</h1>
+        </div>
+        <div class="setting-btn">
+            <button type="button" id="chat-btn" aria-label="Toggle settings"><i class="bi bi-chat-dots"></i></button>
+        </div>
+
+    </header>
+
+    <main>
+        <section id="main1" class="main1">
+            <div class="loader_vid1" id="vid">
+                <video id="v1" width="400" height="400" autoplay loop muted playsinline disablepictureinpicture>
+                    <source src="assets/video/robo/lv_0_20240218155454.mp4" type="video/mp4">
+
+                </video>
+
+            </div>
+            <div id="text_show1">
+                <h2 class="text">Ask me anything</h2>
+
+            </div>
+        </section>
+        <section id="main2" class="main2">
+            <div class="loader_vid1" id="vid">
+                <video id="listen" width="300" height="300" autoplay loop muted playsinline disablepictureinpicture>
+                    <source src="assets/video/robo/listen.mp4" type="video/mp4">
+
+                </video>
+                <video id="loader" width="300" height="300" autoplay loop muted playsinline disablepictureinpicture>
+                    <source src="assets/video/robo/loader.mp4" type="video/mp4">
+
+                </video>
+
+            </div>
+
+            <div class="wave_container">
+                <div class="ai_txt" id="ai_txt">
+                    <p class="text-start text-ligth aimsg"></p>
+                </div>
+                <div class="wc2">
+                    <div id="siri-container"></div>
+                </div>
+            </div>
+        </section>
+
+        <div id="bottom_panle1" class="bottom_panle">
+            <button type="button" name="mic" id="mic"><i class="bi bi-mic"></i></button>
+            <input type="text" name="text_box" id="text_box" placeholder="type here....">
+
+
+            <button type="button" name="send" id="send"><i class="bi bi-box-arrow-right"></i></button>
+        </div>
+    </main>
+    <div class="slide-panel">
+
+        <div class="chat_header_box">
+            <h3>Chat</h3>
+            <button id="close-btn"><i class="bi bi-x"></i></button>
+        </div>
+        <div class="chat_body" id="chat_body">
+
+        </div>
+    </div>
+    <video id="videoElement" width="400" height="300" autoplay></video>
+    <!--Jquery  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- Texllate -->
+    <script src="assets/texllate-20240120T154859Z-001/texllate/jquery.fittext.js"></script>
+    <script src="assets/texllate-20240120T154859Z-001/texllate/jquery.lettering.js"></script>
+    <script src="http://jschr.github.io/textillate/jquery.textillate.js"></script>
+    <!-- wave-->
+    <script src="https://unpkg.com/siriwave/dist/siriwave.umd.min.js"></script>
+
+
+
+    <!-- Include your JS file -->
+
+    <script src="control.js"></script>
+    <script type="text/javascript" src="eel.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

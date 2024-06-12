@@ -1,0 +1,419 @@
+body {
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   background-color: rgb(0, 0, 0);
+   flex-direction: column;
+   margin: 0;
+   overflow: hidden;
+   flex-wrap: wrap;
+   align-content: center;
+   font-family: "Roboto", sans-serif;
+   width: 100%;
+   height: 100%;
+   transition: left 0.3s ease;
+}
+section.main1 {
+   display: flex;
+   width: 100%;
+   height: 100%;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   transition: left 0.3s ease;
+
+}
+section.main2 {
+   display: flex;
+   width: 100%;
+   height: 100%;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   transition: left 0.3s ease;
+}
+p {
+   display: flex;
+   color: white;
+   align-items: center;
+   justify-content: center;
+   font-size: 30px;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#ai_txt {
+   display: flex;
+   justify-content: center;
+   height: 100px;
+   width: 90%;
+   align-items: flex-end;
+}
+header.navbar {
+   display: flex;
+   background-color: #000;
+   color: #fff;
+   padding: 20px 0;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   flex-direction: row;
+   align-content: center;
+   flex-wrap: wrap;
+   height: 20px;
+   border-bottom: 2px solid rgb(45, 0, 168);
+   box-shadow: 0 0 15px rgb(45, 0, 168);
+   z-index: 2000;
+}
+.centernav {
+   display: flex;
+   width: 200px;
+   border-radius: 0 0px 10px 10px;
+   border-bottom: 2px solid rgb(45, 0, 168);
+   border-left: 2px solid rgb(45, 0, 168);
+   border-right: 2px solid rgb(45, 0, 168);
+   border-top: 2px solid black;
+   box-shadow: 0 0 15px rgb(45, 0, 168);
+   align-items: center;
+   justify-content: space-around;
+}
+.loader_vid1 {
+   z-index: -10;
+   margin-top: 30px;
+}
+h2 {
+   color: white;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+   font-family: "Roboto";
+   text-shadow: 0 0 15px rgb(45, 0, 168);
+}
+h1 {
+   color: white;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+   font-family: "Roboto";
+
+}
+.logo {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding-left: 30px;
+}
+main {
+   display: flex;
+   width: 100%;
+   height: auto;
+   display: flex;
+   width: 100%;
+   height: auto;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+}
+.bottom_panle {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   background-color: rgb(0, 0, 0);
+   overflow: hidden;
+   border-radius: 30px;
+   border: 3px solid rgb(45, 0, 168);
+   box-shadow: 0 0 13px rgb(45, 0, 168);
+   width: 60%;
+   height: 20%;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   padding-right: 7px;
+   padding-left: 7px;
+}
+.text_input {
+   display: flex;
+   width: 100%;
+   height: 35px;
+   padding-right: 10px;
+   padding-left: 10px;
+
+}
+input {
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   height: 100%;
+
+   background: transparent;
+   border: none;
+   outline: none;
+   color: rgb(255, 255, 255);
+   font-size: 18px;
+}
+#mic {
+   color: rgb(255, 255, 255);
+   background: transparent;
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   border: none;
+   outline: none;
+   font-style: italic;
+   font-size: 23px;
+   align-items: center;
+   justify-content: center;
+
+}
+#mic:hover {
+   color: rgb(45, 0, 168);
+   text-shadow: 0 0 10px rgb(45, 0, 168);
+}
+#mic:active {
+   color: rgb(45, 0, 168);
+   text-shadow: 0 0 10px rgb(45, 0, 168);
+}
+#send:hover {
+   text-shadow: 0 0 10px rgb(45, 0, 168);
+   color: rgb(45, 0, 168);
+}
+#send {
+   color: rgb(255, 255, 255);
+   background: transparent;
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   border: none;
+   outline: none;
+   font-style: italic;
+   font-size: 23px;
+   align-items: center;
+   justify-content: center;
+
+}
+button#chat-btn {
+   color: white;
+   background: transparent;
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   border: none;
+   outline: none;
+   font-style: italic;
+   font-size: 28px;
+   align-items: center;
+   justify-content: center;
+   margin: 5px;
+}
+#close-btn {
+   color: white;
+   background: transparent;
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   border: none;
+   outline: none;
+   font-style: italic;
+   font-size: 28px;
+   align-items: center;
+   justify-content: center;
+   padding-right: 55px;
+
+}
+.wave_container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 40%;
+   flex-direction: column;
+}
+div#siri-container {
+   width: 100%;
+   height: 100px;
+}
+.wc2 {
+   display: flex;
+   width: 60%;
+   justify-content: flex-end;
+   flex-direction: column;
+   align-items: center;
+   height: 50px;
+   margin-top: 20px;
+}
+.chat-screen {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   background-color: rgb(0, 0, 0);
+   overflow: hidden;
+   border-radius: 30px;
+   border: 3px solid rgb(45, 0, 168);
+   box-shadow: 0 0 13px rgb(45, 0, 168);
+   width: 700px;
+   height: 450px;
+
+}
+.CHATBOX {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 30px;
+   margin-bottom: 20px;
+   background-color: rgb(0, 0, 0);
+   overflow: hidden;
+   border-radius: 30px;
+   border: 3px solid rgb(45, 0, 168);
+   width: 60%;
+   height: 450px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   padding-right: 7px;
+   padding-left: 7px;
+}
+.ai_txt_box {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   background-color: rgb(0, 0, 0);
+   overflow: hidden;
+   border-radius: 30px;
+   border: 3px solid rgb(45, 0, 168);
+   box-shadow: 0 0 13px rgb(45, 0, 168);
+   width: 600px;
+   height: 400px;
+   margin-top: 30px;
+   margin-bottom: 30px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   padding-right: 7px;
+   padding-left: 7px;
+   text-align: justify;
+   font-size: 20px;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.text_box {
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   text-align: justify;
+   size: 14px;
+   align-items: flex-start;
+   justify-content: first baseline;
+
+}
+#typed-label {
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-size: 18px;
+   word-spacing: 5px;
+   color: rgb(255, 255, 255);
+
+}
+.slide-panel {
+   width: 350px;
+   height: 91%;
+   background-color: #191919;
+   position: fixed;
+
+   right: -350px;
+   /* Start off-screen */
+   transition: right 0.3s ease;
+   /* Ensure panel is above other content */
+   bottom: 0;
+   overflow-y: auto;
+   /* Enable vertical scrollbar */
+   scrollbar-width: thin;
+   /* Specify the width of the scrollbar */
+   scrollbar-color: rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0.1);
+}
+.slide-panel::-webkit-scrollbar-track {
+   background: rgba(0, 0, 0, 0.1); /* Background color of the track */
+}
+/* Handle */
+.slide-panel::-webkit-scrollbar-thumb {
+   background: rgba(0, 0, 0, 0.5); /* Color of the scrollbar handle */
+   border-radius: 10px; /* Border radius of the scrollbar handle */
+}
+/* Handle on hover */
+.slide-panel::-webkit-scrollbar-thumb:hover {
+   background: rgba(0, 0, 0, 0.7); /* Color of the scrollbar handle on hover */
+}
+.slide-panel.show {
+   right: 0;
+  
+}
+.show-main {
+   margin-right: 350px;
+ 
+}
+.slide-panel.show #bottom_panle1 {
+   margin-right: 350px;
+
+}
+.preloader {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: #000000;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 3000;
+}
+.chat_header_box {
+   height: 50px;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-left: 20px;
+   padding-top: 10px;
+   border-bottom: 2px solid rgba(0, 0, 0 , 44%);
+}
+h3 {
+   color: #fff;
+   font-size: 30px;
+   font-weight: 600;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   ;
+}
+.reciver_msg {
+   padding: 8px;
+   border: 1px solid #b70078;
+   border-radius: 0px 15px 15px 20px;
+   width: auto;
+   color: white;
+   background-color: #b70078;
+}
+.sender_msg {
+   padding: 8px;
+   border: 1px solid #0045ff;
+   border-radius: 15px 15px 0px 20px;
+   width: auto;
+   color: white;
+   background-color: #0045ff;
+}
+.width-size {
+   max-width: 60%;
+   width: auto;
+}
+div#chat_body {
+   display: flex;
+   flex-direction: column;
+   overflow-y: auto;
+   max-height: 500px;
+   padding: 5px;
+}
+.row.justify-content-end.mb-4 {
+   justify-content: end;
+   display: flex;
+   padding-top: 6px;
+   padding-bottom: 6px;
+}
+.row.justify-content-start.mb-4 {
+   justify-content: start;
+   display: flex;
+   padding-top: 6px;
+   padding-bottom: 6px;
+}
