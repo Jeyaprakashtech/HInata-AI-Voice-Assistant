@@ -191,7 +191,7 @@ def findContact(query):
 #------------------------------------------# AI CHAT BOT #------------------------------------------------------
 def chatBot(query):
     user_input = query.lower()
-    chatbot = hugchat.ChatBot(cookie_path="C://Users//user//Documents//projects//hina//engine//cookies.json")
+    chatbot = hugchat.ChatBot(cookie_path="C:\\Users\\user\\Documents\\projects\\hina\\engine\\cookies.json")
     id = chatbot.new_conversation()
     chatbot.change_conversation(id)
     response =  chatbot.chat(user_input)
